@@ -12,6 +12,19 @@
     {
       "title": "User Access",
       "expandable": true,
+      "permissions": [
+        {
+          "method": "isOrgAdmin"
+        },
+        {
+          "method": "loosePermissions",
+          "args": [
+            [
+              "rbac:*:*"
+            ]
+          ]
+        }
+      ],
       "routes": [
         {
           "id": "overview",
